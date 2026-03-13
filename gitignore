@@ -1,0 +1,9 @@
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+
+# Ignore environment directories
+venv/
