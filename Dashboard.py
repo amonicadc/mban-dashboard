@@ -290,7 +290,7 @@ utilization = 365 - avg_availability
 # Create the Dash app instance
 # This basically initializes the web application
 app = dash.Dash(__name__)
-
+server = app.server
 # -----------------------------------------------------
 # Custom HTML template
 # -----------------------------------------------------
@@ -1445,10 +1445,7 @@ def update_dashboard(superhost, year, month, room, neigh, name):
 # can be viewed in a browser.
 # When this file is executed, Dash launches a local server
 if __name__ == "__main__":
-    app.run(debug=True, port=8053)
-
-
-# In[ ]:
+    app.run_server(debug=False)
 
 
 
